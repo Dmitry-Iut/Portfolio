@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Дмитрий Иутинский — портфолио</title>
+<meta name="description" content="Портфолио Дмитрия Иутинского: UI/UX и геймдизайн, веб-разработка, прототипы в Figma и 3D-моделирование в Blender.">
+<meta name="theme-color" content="#0d0f12">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;700;800&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<header class="nav">
+  <a class="logo" href="#top">ДИ<span>.</span></a>
+  <nav class="nav-links" id="navLinks">
+    <a href="#about">Обо мне</a>
+    <a href="#web">Веб</a>
+    <a href="#games">Игры</a>
+    <a href="#figma">Figma</a>
+    <a href="#modeling">3D</a>
+    <a href="#practice">Практика</a>
+    <a href="#contacts">Контакты</a>
+  </nav>
+  <button class="burger" id="burger" aria-label="Меню"><span></span><span></span></button>
+</header>
+
+<main id="top">
+
+  <section class="hero">
+    <div class="hero-text">
+      <p class="tag">Студент 3 курса · КГУ «Высшая ИТ-школа»</p>
+      <h1>Дмитрий<br>Иутинский</h1>
+      <p class="lead">Проектирую интерфейсы и игры, собираю сайты на HTML, CSS и JavaScript, моделирую в Blender. Люблю, когда у проекта есть история, а пользоваться им просто и приятно.</p>
+      <div class="hero-roles">
+        <span>UI/UX-дизайн</span><span>Геймдизайн</span><span>Веб-разработка</span><span>3D-моделирование</span>
+      </div>
+      <div class="hero-actions">
+        <a class="btn primary" href="#web">Смотреть работы</a>
+        <a class="btn" href="https://github.com/dmitry-iut/Portfolio" target="_blank" rel="noopener">GitHub ↗</a>
+      </div>
+    </div>
+    <div class="hero-art">
+      <img src="assets/thumbs/house_by_the_sea.webp" alt="3D-сцена: домик у моря" class="art-main">
+      <img src="assets/thumbs/fan.webp" alt="Макет сайта Whoosh" class="art-side a">
+      <img src="assets/thumbs/duck.webp" alt="3D-модель утки" class="art-side b">
+    </div>
+  </section>
+
+  <section id="about" class="section">
+    <h2 class="section-title"><i>01</i>Обо мне</h2>
+    <div class="about-grid">
+      <div class="about-text">
+        <p>Я учусь в Костромском государственном университете, в Институте «Высшая ИТ-школа». Направление 09.03.02 «Информационные системы и технологии», профиль «Информационные технологии в медиаиндустрии».</p>
+        <p>Мне интересно всё, что находится на стыке дизайна и разработки: продумать, как человек будет пользоваться продуктом, нарисовать это в Figma, а потом собрать живую страницу или игру. На практиках работал в командах UI-дизайнером и геймдизайнером, по учёбе делал приложения в Android Studio и игры на Unity, а в свободное время моделирую в Blender и делаю браузерные игры.</p>
+        <p>Прошёл марафон по веб-дизайну в YUDAEV.SCHOOL — от первого проекта в Figma до оформления кейса для портфолио.</p>
+      </div>
+      <dl class="facts">
+        <div><dt>Университет</dt><dd>КГУ, Институт «Высшая ИТ-школа»</dd></div>
+        <div><dt>Кафедра</dt><dd>Информационных систем и технологий</dd></div>
+        <div><dt>Профиль</dt><dd>ИТ в медиаиндустрии</dd></div>
+        <div><dt>Группа</dt><dd>24-ИМбо-3</dd></div>
+        <div><dt>Курс</dt><dd>3</dd></div>
+      </dl>
+    </div>
+
+    <h3 class="sub">Инструменты и навыки</h3>
+    <div class="skills">
+      <div class="skill"><h4>Дизайн</h4><p>Figma, прототипирование, пользовательские сценарии, UI-компоненты, инфографика</p></div>
+      <div class="skill"><h4>Веб</h4><p>HTML5, CSS3, JavaScript, адаптивная вёрстка, светлая и тёмная темы, GitHub Pages, Vercel</p></div>
+      <div class="skill"><h4>Игры</h4><p>Геймдизайн-документы, механики и баланс, схемы уровней, Unity, браузерные игры на JS и WebGL</p></div>
+      <div class="skill"><h4>3D</h4><p>Blender: моделирование, материалы и текстуры, свет, рендер и анимация</p></div>
+      <div class="skill"><h4>Разработка</h4><p>Android Studio, Git и GitHub, базы данных и SQL, Linux</p></div>
+    </div>
+  </section>
+
+  <section id="web" class="section">
+    <h2 class="section-title"><i>02</i>Веб-проекты</h2>
+    <div class="web-grid">
+      <article class="web-card">
+        <a class="web-shot" href="web/Board_game_catalog/index.html" target="_blank" rel="noopener">
+          <img src="web/Board_game_catalog/img/munchkin/1.jpg" alt="Каталог «Фишка»" loading="lazy">
+          <img src="web/Board_game_catalog/img/uno/1.png" alt="" loading="lazy">
+          <img src="web/Board_game_catalog/img/mafia/1.jpg" alt="" loading="lazy">
+        </a>
+        <div class="web-body">
+          <h3>«Фишка» — каталог настольных игр</h3>
+          <p>Сайт-каталог издательства настольных игр: восемь игр, у каждой своя карточка с каруселью фотографий. Есть избранное, корзина, светлая и тёмная тема.</p>
+          <ul class="chips"><li>HTML5</li><li>CSS3</li><li>JavaScript</li><li>Адаптив</li></ul>
+          <div class="links">
+            <a class="btn primary sm" href="web/Board_game_catalog/index.html" target="_blank" rel="noopener">Открыть сайт ↗</a>
+            <a class="btn sm" href="https://github.com/dmitry-iut/Portfolio/tree/main/web/Board_game_catalog" target="_blank" rel="noopener">Код</a>
+          </div>
+        </div>
+      </article>
+      <article class="web-card">
+        <a class="web-shot" href="web/Veterinary_passport/project/index.html" target="_blank" rel="noopener">
+          <img src="web/Veterinary_passport/project/img/ryzhik.jpg" alt="Ветпаспорт" loading="lazy">
+          <img src="web/Veterinary_passport/project/img/luna.jpg" alt="" loading="lazy">
+          <img src="web/Veterinary_passport/project/img/lucky.jpg" alt="" loading="lazy">
+        </a>
+        <div class="web-body">
+          <h3>Ветпаспорт — база домашних питомцев</h3>
+          <p>Учебный проект по дисциплине «Веб-разработка». У каждого хозяина карточка с каруселью питомцев. В проекте есть документация: интервью, карты пути пользователя, job stories, модели данных, user flow и маршруты.</p>
+          <ul class="chips"><li>HTML5</li><li>CSS3</li><li>JavaScript</li><li>UX-документация</li></ul>
+          <div class="links">
+            <a class="btn primary sm" href="web/Veterinary_passport/project/index.html" target="_blank" rel="noopener">Открыть сайт ↗</a>
+            <a class="btn sm" href="https://github.com/dmitry-iut/Portfolio/tree/main/web/Veterinary_passport/documentation" target="_blank" rel="noopener">Документация</a>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section id="games" class="section">
+    <h2 class="section-title"><i>03</i>Игры</h2>
+    <div class="games">
+      <article class="game">
+        <span class="game-label">Практика · Геймдизайнер</span>
+        <h3>Веб-игра для Музея сладостей</h3>
+        <p>Браузерная игра, в которой посетители музея проходят задания и узнают об экспонатах. Придумывал правила и механики, писал геймдизайн-документ, рисовал схемы уровней и настраивал баланс.</p>
+        <div class="links">
+          <a class="btn primary sm" href="https://tkbctqbdfyjdbx770.site/" target="_blank" rel="noopener">Играть ↗</a>
+          <a class="btn sm" href="https://www.figma.com/design/4335ww4KQNeCONw6IRcUs6/%D0%A1%D0%9A%D0%91%D0%A2-%D0%9F%D1%80%D0%B0%D0%BA%D1%82%D0%B8%D0%BA%D0%B0?node-id=105-26&t=CyLHAzmLSKX5TTX1-1" target="_blank" rel="noopener">Figma</a>
+        </div>
+      </article>
+      <article class="game">
+        <span class="game-label">Визуальная новелла</span>
+        <h3>«Алая роза Вальмона»</h3>
+        <p>Браузерная визуальная новелла. Концепцию, сюжет и игровую механику придумал сам, а для реализации использовал ИИ-инструменты.</p>
+        <div class="links">
+          <a class="btn primary sm" href="https://dmitry-iut.github.io/alaya-roza-valmona/" target="_blank" rel="noopener">Играть ↗</a>
+        </div>
+      </article>
+      <article class="game">
+        <span class="game-label">Практика · UI-дизайнер</span>
+        <h3>Space — мини-игра ко Дню космонавтики</h3>
+        <p>Мини-игра для детей, подготовленная к 12 апреля для библиотеки. Отвечал за интерфейс: экраны, кнопки, навигацию и единый визуальный стиль.</p>
+        <div class="links">
+          <a class="btn primary sm" href="https://www.figma.com/design/ZoXlmP57n46gRokn2EPjQd/Space?t=HWRuZFCQE8TTkOve-1" target="_blank" rel="noopener">Макет в Figma ↗</a>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section id="figma" class="section">
+    <h2 class="section-title"><i>04</i>Figma и прототипы</h2>
+
+    <div class="course">
+      <div class="course-info">
+        <span class="game-label">YUDAEV.SCHOOL · марафон по веб-дизайну</span>
+        <h3>Коммерческие первые экраны</h3>
+        <p>Четыре концепции главных экранов для разных продуктов: дрон, фен, магазин парфюмерии и фитнес-клуб. Структура, типографика, сетка и подача кейса.</p>
+        <button class="btn sm" data-open="certificate">Сертификат</button>
+      </div>
+      <div class="course-gallery" data-gallery="course"></div>
+    </div>
+
+    <div class="figma-list" id="figmaList"></div>
+  </section>
+
+  <section id="modeling" class="section">
+    <h2 class="section-title"><i>05</i>3D-моделирование</h2>
+    <p class="section-lead">Модели, материалы, свет и анимация в Blender. Нажмите на работу, чтобы открыть рендер в полном размере.</p>
+    <div class="gallery" data-gallery="3d"></div>
+  </section>
+
+  <section id="practice" class="section">
+    <h2 class="section-title"><i>06</i>Практика</h2>
+    <div class="practice">
+      <article class="pr">
+        <div class="pr-num">01</div>
+        <div>
+          <h3>Мини-игра для библиотеки</h3>
+          <p class="pr-role">UI-дизайнер · Figma</p>
+          <p>Проектировал экраны и сценарии игрока, собирал макеты меню, игровых экранов и окон результатов, подбирал цвета, шрифты и иконки, передавал макеты разработчикам и вносил правки по обратной связи.</p>
+        </div>
+      </article>
+      <article class="pr">
+        <div class="pr-num">02</div>
+        <div>
+          <h3>Веб-игра для музея</h3>
+          <p class="pr-role">Геймдизайнер · ООО «Совкомбанк Технологии», дистанционно · 17–29 августа 2026</p>
+          <p>Разработал правила и механики, подготовил геймдизайн-документ, нарисовал схемы уровней с учётом маршрутов посетителей, переводил решения в технические задания для команды, тестировал сценарии в браузере и настраивал сложность и время прохождения.</p>
+          <a class="btn sm" href="https://github.com/dmitry-iut/Portfolio/blob/main/practice/practices.md" target="_blank" rel="noopener">Подробный отчёт</a>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section id="contacts" class="section contacts">
+    <h2>Давайте сделаем что-нибудь интересное</h2>
+    <p>Открыт к стажировкам, подработке и командным проектам в дизайне, вебе и геймдеве.</p>
+    <div class="hero-actions center">
+      <a class="btn primary" href="https://github.com/dmitry-iut/Portfolio" target="_blank" rel="noopener">GitHub ↗</a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">© 2026 Дмитрий Иутинский</footer>
+
+<div class="lightbox" id="lightbox" hidden>
+  <button class="lb-close" aria-label="Закрыть">×</button>
+  <button class="lb-prev" aria-label="Назад">‹</button>
+  <figure>
+    <div class="lb-media"></div>
+    <figcaption></figcaption>
+  </figure>
+  <button class="lb-next" aria-label="Вперёд">›</button>
+</div>
+
+<script src="assets/script.js"></script>
+</body>
+</html>
