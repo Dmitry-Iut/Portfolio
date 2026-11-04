@@ -468,7 +468,16 @@ function orderForm() {
     required: true,
     autocomplete: "tel",
     placeholder: "+7 (900) 000-00-00",
-    pattern: "[+0-9()\\-\\s]{10,}",
+    // Скобки внутри [...] без экранирования ломают pattern (браузеры
+    // компилируют его с флагом v) — тогда проверка молча отключается.
+    pattern: String.raw`(\+7|8)[\s\-]?\(?\d{3}\)?[\s\-]?\d{3}[\s\-]?\d{2}[\s\-]?\d{2}`,
+    title: "Формат: +7 (900) 000-00-00 или 89000000000",
+  });
+  phone.addEventListener("input", () => phone.setCustomValidity(""));
+  phone.addEventListener("invalid", () => {
+    if (phone.validity.patternMismatch) {
+      phone.setCustomValidity("Введите номер в формате +7 (900) 000-00-00");
+    }
   });
   const delivery = el(
     "select",
