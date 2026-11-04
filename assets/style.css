@@ -89,7 +89,7 @@ h1 { font: 800 clamp(44px, 7vw, 88px)/1 var(--head); letter-spacing: -.02em; mar
 .chips li { font-size: 13px; padding: 4px 12px; border-radius: 99px; border: 1px solid var(--line); color: #cfd3da; }
 .links { display: flex; flex-wrap: wrap; gap: 8px; margin-top: auto; }
 
-.games { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+.games { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
 .game { background: var(--card); border: 1px solid var(--line); border-radius: var(--radius); padding: 28px; display: flex; flex-direction: column; gap: 14px; position: relative; overflow: hidden; }
 .game::before { content: ""; position: absolute; width: 180px; height: 180px; right: -60px; top: -60px; border-radius: 50%; background: radial-gradient(var(--accent), transparent 70%); opacity: .12; }
 .game-label { font-size: 12px; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; color: var(--accent); }
