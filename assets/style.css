@@ -92,11 +92,17 @@ h1 { font: 800 clamp(44px, 7vw, 88px)/1 var(--head); letter-spacing: -.02em; mar
 .games { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
 .game { background: var(--card); border: 1px solid var(--line); border-radius: var(--radius); padding: 28px; display: flex; flex-direction: column; gap: 14px; position: relative; overflow: hidden; }
 .game::before { content: ""; position: absolute; width: 180px; height: 180px; right: -60px; top: -60px; border-radius: 50%; background: radial-gradient(var(--accent), transparent 70%); opacity: .12; }
+.game.has-shot { grid-column: 1 / -1; flex-direction: row; align-items: center; gap: 32px; padding: 0 28px 0 0; }
+.game.has-shot::before { display: none; }
+.game-shot { flex: 0 0 300px; align-self: stretch; min-height: 340px; overflow: hidden; position: relative; }
+.game-shot img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center 30%; transition: .4s; }
+.game:hover .game-shot img { transform: scale(1.04); }
+.game-body { display: flex; flex-direction: column; gap: 14px; padding: 28px 0; }
 .game-label { font-size: 12px; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; color: var(--accent); }
 
 .course { display: grid; grid-template-columns: 1fr 2fr; gap: 28px; background: var(--card); border: 1px solid var(--line); border-radius: var(--radius); padding: 28px; margin-bottom: 20px; }
 .course-info { display: flex; flex-direction: column; gap: 14px; align-items: flex-start; }
-.course-gallery { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; }
+.course-gallery { display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; }
 
 .figma-list { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; }
 .figma-item { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 20px 24px; background: var(--card); border: 1px solid var(--line); border-radius: 16px; transition: .2s; }
@@ -145,6 +151,9 @@ h1 { font: 800 clamp(44px, 7vw, 88px)/1 var(--head); letter-spacing: -.02em; mar
 @media (max-width: 1000px) {
   .skills { grid-template-columns: repeat(2, 1fr); }
   .games { grid-template-columns: 1fr; }
+  .game.has-shot { flex-direction: column; align-items: stretch; gap: 0; padding: 0; }
+  .game-shot { flex: none; min-height: 0; height: 240px; }
+  .game-body { padding: 24px 28px 28px; }
   .course { grid-template-columns: 1fr; }
 }
 

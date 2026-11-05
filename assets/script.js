@@ -21,8 +21,6 @@ const models = [
 const course = [
   { thumb: "MacBook_Pro_-_2", full: "MacBook Pro - 2.jpg", title: "MDR Ultra Light — первый экран для дрона" },
   { thumb: "fan", full: "fan.jpg", title: "Whoosh — первый экран для фена" },
-  { thumb: "fan2", full: "fan2.jpg", title: "Whoosh — вариант экрана" },
-  { thumb: "card_fan", full: "card_fan.jpg", title: "Whoosh — карточка" },
   { thumb: "perfumery", full: "perfumery.jpg", title: "Perfume Mode — магазин парфюмерии" },
   { thumb: "fitness", full: "fitness.jpg", title: "X'Flow Gym — фитнес-клуб" }
 ];
